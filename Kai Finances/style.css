@@ -1,0 +1,105 @@
+/*
+#2d65ce – Medium Blue (primary)  
+#0b2169 – Dark Navy (depth)  
+#FFFFFF – White (neutral)  
+#ce9c2d – Golden Orange (accent)  
+#2dc6ce – Light Teal (secondary accent)
+*/
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  display: grid; /* Use grid to center content */
+}
+
+/* HEADER, LOGO E NAVBAR*/
+header {
+  height: 64px;
+  background: linear-gradient(to bottom right, #0b2169, #2d65ce);
+  color: white;
+  display: flex;
+}
+header h1 {
+  margin: auto 10px;
+  padding: 0px 10px;
+  white-space: nowrap;
+}
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+.navbar{
+  display: flex;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li {
+  margin: auto;
+  padding: 0px 10px;
+  white-space: nowrap;
+}
+.navbar ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTION */
+.section-title {
+  margin: auto 10px;
+  padding: 0px 10px;
+  color: #0b2169;
+  width: 250px;
+}
+.section-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background: #2d65ce;
+  border-radius: 10px;
+  margin: 10px;
+  height: 150px;
+  width: 400px;
+  padding: 10px;
+  transition: 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.card p {
+  color: #ffffff;
+  padding: 5px 0px;
+}
+
+#card-name {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to bottom right, #2d65ce, #0b2169);
+  color: #fff;
+}
